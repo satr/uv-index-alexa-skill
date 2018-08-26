@@ -9,6 +9,8 @@ import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestStreamHandler;
 import com.amazonaws.util.IOUtils;
 import com.naveronics.alexa.skill.uvindex.request.handler.UvIndexRequestHandler;
+import com.naveronics.alexa.skill.uvindex.service.UvIndexService;
+import com.naveronics.alexa.skill.uvindex.service.UvIndexServiceImpl;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -20,8 +22,12 @@ public class FunctionHandler implements RequestStreamHandler {
     private final JacksonSerializer serializer;
 
     public FunctionHandler() {
+        this(new UvIndexServiceImpl());
+    }
+
+    public FunctionHandler(UvIndexService uvIndexService) {
         skill = new StandardSkillBuilder()
-                .addRequestHandler(new UvIndexRequestHandler())
+                .addRequestHandler(new UvIndexRequestHandler(uvIndexService))
                 .build();
         serializer = new JacksonSerializer();    }
 

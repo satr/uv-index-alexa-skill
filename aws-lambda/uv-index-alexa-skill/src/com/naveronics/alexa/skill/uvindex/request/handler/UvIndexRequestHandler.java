@@ -3,17 +3,19 @@ package com.naveronics.alexa.skill.uvindex.request.handler;
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 import com.amazon.ask.model.Response;
+import com.naveronics.alexa.skill.uvindex.helper.UvIndexMessageBuilder;
 import com.naveronics.alexa.skill.uvindex.repository.ImageRepository;
 import com.naveronics.alexa.skill.uvindex.service.UvIndexService;
+
 import java.util.Optional;
 
 public class UvIndexRequestHandler implements RequestHandler {
     private final ImageRepository imageRepository;
     private final UvIndexService uvIndexService;
 
-    public UvIndexRequestHandler() {
+    public UvIndexRequestHandler(UvIndexService uvIndexService) {
         imageRepository = new ImageRepository();
-        uvIndexService = new UvIndexService();
+        this.uvIndexService = uvIndexService;
     }
 
     @Override
@@ -23,12 +25,11 @@ public class UvIndexRequestHandler implements RequestHandler {
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-        String uvIndexLevelText = uvIndexService.getUvIndexLevelText();
-        String speechText = "UV index is " + uvIndexLevelText;
+        String uvIndexLevelDescription = uvIndexService.getUvIndexLevelDescription();
         return input.getResponseBuilder()
-                .withSpeech(speechText)
-                .withSimpleCard("UV index", uvIndexLevelText)
-//                .withStandardCard("UV index is ", uvIndexLevelText, imageRepository.getUvIndexLevelImageBy(number))
+                .withSpeech(uvIndexLevelDescription)
+                .withSimpleCard(UvIndexMessageBuilder.getTitle(), uvIndexService.getUvIndexLevelText())
+//                .withStandardCard(uvIndexLevelDescription, imageRepository.getUvIndexLevelImageBy(number))
                 .build();
     }
 }

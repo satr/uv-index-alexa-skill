@@ -1,0 +1,51 @@
+{
+  "version": "1.0",
+  "session": {
+    "new": false,
+    "sessionId": "amzn1.echo-api.session.SESSION_ID",
+    "application": {
+      "applicationId": "amzn1.ask.skill.SKILL_ID"
+    },
+    "user": {
+      "userId": "amzn1.ask.account.USER_ID"
+    }
+  },
+  "context": {
+    "AudioPlayer": {
+      "playerActivity": "IDLE"
+    },
+    "Display": {
+      "token": ""
+    },
+    "System": {
+      "application": {
+        "applicationId": "amzn1.ask.skill.SKILL_ID"
+      },
+      "user": {
+        "userId": "amzn1.ask.account.USER_ID"
+      },
+      "device": {
+        "deviceId": "amzn1.ask.device.DEVICE_ID.",
+        "supportedInterfaces": {
+          "AudioPlayer": {},
+          "Display": {
+            "templateVersion": "1.0",
+            "markupVersion": "1.0"
+          }
+        }
+      },
+      "apiEndpoint": "https://api.amazonalexa.com",
+      "apiAccessToken": "0123456789_ACCESS_TOCKEN"
+    }
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "amzn1.echo-api.request.REQUEST_ID",
+    "timestamp": "2018-08-26T16:52:04Z",
+    "locale": "en-US",
+    "intent": {
+      "name": "UvIndexLevel",
+      "confirmationStatus": "NONE"
+    }
+  }
+}

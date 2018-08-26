@@ -1,20 +1,25 @@
 package com.naveronics.alexa.skill.uvindex.service;
 
 import com.naveronics.alexa.skill.uvindex.common.Constant;
+import com.naveronics.alexa.skill.uvindex.repository.UvIndexRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import org.mockito.Mock;
 
 import java.util.Arrays;
 import java.util.Collection;
 
 import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 @RunWith(Parameterized.class)
 public class UvIndexServiceTest {
-
-    private UvIndexService service;
+    private UvIndexServiceImpl service;
+    @Mock
+    private UvIndexRepository uvIndexRepository;
 
     @Parameterized.Parameters(name = "{index}: {0} is \"{1}\"")
     public static Collection<Object[]> data() {
@@ -39,7 +44,8 @@ public class UvIndexServiceTest {
 
     @Before
     public void setUp() {
-        service = new UvIndexService();
+        uvIndexRepository = mock(UvIndexRepository.class);
+        service = new UvIndexServiceImpl(uvIndexRepository);
     }
 
     @Parameterized.Parameter
@@ -49,6 +55,7 @@ public class UvIndexServiceTest {
 
     @Test
     public void getUvIndexLevelText() {
-        assertEquals(expectedLevelText, service.getUvIndexLevelText(level));
+        when(uvIndexRepository.get()).thenReturn(level);
+        assertEquals(expectedLevelText, service.getUvIndexLevelText());
     }
 }
