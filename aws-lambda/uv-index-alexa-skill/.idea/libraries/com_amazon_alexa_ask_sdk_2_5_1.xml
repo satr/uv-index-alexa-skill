@@ -1,0 +1,89 @@
+<component name="libraryTable">
+  <library name="com.amazon.alexa:ask-sdk:2.5.1" type="repository">
+    <properties maven-id="com.amazon.alexa:ask-sdk:2.5.1" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/ask-sdk-2.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ask-sdk-core-2.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ask-sdk-model-1.5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-annotations-2.9.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-core-2.9.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-databind-2.9.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-datatype-jsr310-2.9.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.7.25.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-slf4j-impl-2.11.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-api-2.11.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-core-2.11.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ask-sdk-lambda-support-2.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/aws-lambda-java-core-1.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-io-2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ask-sdk-servlet-support-2.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ask-sdk-dynamodb-persistence-adapter-2.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/aws-java-sdk-dynamodb-1.11.301.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/aws-java-sdk-s3-1.11.301.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/aws-java-sdk-kms-1.11.301.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ion-java-1.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-dataformat-cbor-2.6.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/joda-time-2.8.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ask-sdk-apache-client-2.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpclient-4.5.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpcore-4.4.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/ask-sdk-2.5.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ask-sdk-core-2.5.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ask-sdk-model-1.5.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-annotations-2.9.4-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-core-2.9.4-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-databind-2.9.4-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-datatype-jsr310-2.9.4-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.7.25-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-slf4j-impl-2.11.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-api-2.11.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-core-2.11.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ask-sdk-lambda-support-2.5.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/aws-lambda-java-core-1.0.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-io-2.6-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ask-sdk-servlet-support-2.5.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ask-sdk-dynamodb-persistence-adapter-2.5.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/aws-java-sdk-dynamodb-1.11.301-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/aws-java-sdk-s3-1.11.301-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/aws-java-sdk-kms-1.11.301-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ion-java-1.0.2-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-dataformat-cbor-2.6.7-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/joda-time-2.8.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ask-sdk-apache-client-2.5.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpclient-4.5.5-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpcore-4.4.9-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/ask-sdk-2.5.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ask-sdk-core-2.5.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ask-sdk-model-1.5.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-annotations-2.9.4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-core-2.9.4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-databind-2.9.4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-datatype-jsr310-2.9.4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.7.25-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-slf4j-impl-2.11.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-api-2.11.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-core-2.11.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ask-sdk-lambda-support-2.5.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/aws-lambda-java-core-1.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-io-2.6-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ask-sdk-servlet-support-2.5.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ask-sdk-dynamodb-persistence-adapter-2.5.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/aws-java-sdk-dynamodb-1.11.301-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/aws-java-sdk-s3-1.11.301-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/aws-java-sdk-kms-1.11.301-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ion-java-1.0.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-dataformat-cbor-2.6.7-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/joda-time-2.8.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ask-sdk-apache-client-2.5.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpclient-4.5.5-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpcore-4.4.9-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
